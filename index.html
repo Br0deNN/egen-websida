@@ -6,38 +6,41 @@
         <title>Egen hemsida</title>
 
         <link rel="stylesheet" href="home.css"> 
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Importerar ikoner-->
 
     </head>
     <body>
         
         <div class="wrapper">
-            <header>
-                <h1>Theo Brodén</h1>
-                <img class="selfie" src="image/selfie.png" alt="">
+
+            <header class="header">
+                <a href="#" class="logo">Theo.</a>
+
+                <nav class="navbar">
+                    <a href="index.html" class="active">Hem</a>
+                    <a href="about.html">Om mig</a>
+                    <a href="kontakt.html">Kontakt</a>
+                </nav>
             </header>
-            <nav>
-                <ul>
-                    <form action = "index.html">
-                        <button type="submit">
-                            Hem<img class="hem-bild" src="image/home-button-icon.webp" alt="">
-                        </button>
-                    </form>
-                    <form action = "sida2.html">
-                        <button>
-                            Om mig
-                        </button>
-                    </form>
-                    <form action = "sida3.html">
-                        <button>
-                            kingkong
-                        </button>
-                    </form>
-                </ul>
-            </nav>
+
+            <section class="home">
+                <div class="home-content">
+                    <h1>Hej, jag är Theo Brodén</h1>
+                    <h3>Student</h3>
+                    <p>Hejsan svenjsan lingon tjohejsan i din fejsan</p>
+                    <div class="btn-box">
+                        <a href="#">Mitt UF</a>
+                        <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0">Testa</a>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/brodentheo/"><i class='bx bxl-instagram'></i></a> <!-- använder <i> och bx bxl för att kunna anävnda ikonen-->
+                    <a href="https://github.com/Br0deNN"><i class='bx bxl-github'></i></a>
+                </div>
         </div>
-        
-
-
+        </section>
 
     </body>
+
 </html>
