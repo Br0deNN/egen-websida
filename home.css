@@ -6,10 +6,9 @@
 
 .wrapper {
     display: grid;
-    grid-template-rows: 100px 80px auto 80px;
+    grid-template-rows: 100px auto 80px;
     grid-template-areas: 
     "header"
-    "nav"
     "main"
     "footer" ;
 }
@@ -54,6 +53,9 @@ main {
 
 footer {
     grid-area: footer;
+    color: white;
+    text-align: center;
+    
 }
 
 .logo {
@@ -61,11 +63,12 @@ footer {
     color: #ededed;
     text-decoration: none;
     font-weight: 600;
+    padding-top: 15px;
 }
 
 body {
-    height: 100vw;
-    background: url(image/image.png);
+    height: 98vh;
+    background: url(image/leon-contreras-YyBlrCUVFWQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -122,3 +125,22 @@ body {
    border-radius: 10px;
    font-size: 19px;
 }
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+.socials a {
+    color: #00abf0;
+}
+
+
+
+
+.socials i {
+    
+}
+
+
