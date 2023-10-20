@@ -1,11 +1,11 @@
 @import url(https://www.dafont.com/webfont.font);
 
-* {
-   box-sizing: border-box;
-}
+
 
 .wrapper {
     display: grid;
+    height: 100%;
+    width: 100%;
     grid-template-rows: 100px auto 80px;
     grid-template-areas: 
     "header"
@@ -15,9 +15,6 @@
 
 header {
     grid-area: header;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 20px 10%;
     display: flex;
@@ -32,6 +29,7 @@ nav > ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
+    margin-right: 300px;
 }
 
 nav a {
@@ -55,6 +53,7 @@ footer {
     grid-area: footer;
     color: white;
     text-align: center;
+    background: yellowgreen;
     
 }
 
@@ -67,7 +66,7 @@ footer {
 }
 
 body {
-    height: 98vh;
+    height: 97vh;
     background: url(image/leon-contreras-YyBlrCUVFWQ-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -130,17 +129,23 @@ body {
     display: flex;
     justify-content: space-between;
     max-width: 100px;
+    
 }
 
 .socials a {
     color: #00abf0;
 }
 
-
-
-
-.socials i {
-    
+table,th,tr,td{
+    width: 1200px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 1px solid rgb(255, 255, 255);
+    height: 30px;
+    color: #FFF;
+    text-align: center;
 }
 
-
+td:nth-child(1) {
+    text-align: center;
+}
