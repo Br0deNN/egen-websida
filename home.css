@@ -15,7 +15,7 @@
 
 header {
     grid-area: header;
-    width: 100%;
+    width: 97vh;
     padding: 20px 10%;
     display: flex;
     justify-content: space-between;
@@ -23,13 +23,14 @@ header {
 
 nav {
     grid-area: nav;
+    margin-left: 1100px;
 }
 
 nav > ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style-type: none;
-    margin-right: 300px;
+    width: 290px;
 }
 
 nav a {
@@ -38,6 +39,10 @@ nav a {
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+}
+
+nav a:hover {
+    color: #00abf0;
 }
 
 main {
@@ -52,9 +57,14 @@ main {
 footer {
     grid-area: footer;
     color: white;
+    background: rgb(10, 5, 24);
+    padding-bottom: 106px;
+    margin: 0 -10px 0 -10px;
     text-align: center;
-    background: yellowgreen;
-    
+}
+
+footer p {
+    margin-top: 30px;
 }
 
 .logo {
@@ -63,6 +73,7 @@ footer {
     text-decoration: none;
     font-weight: 600;
     padding-top: 15px;
+    cursor: default;
 }
 
 body {
@@ -71,6 +82,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 .active {
@@ -79,28 +91,40 @@ body {
 
 /* Home content */
 
+.home {
+    margin-left: 100px;
+}
+
 .home-content {
     max-width: 700px;
 }
 
+.x {
+   text-decoration: none;
+   color: #FFF;
+   font-weight: 800;
+   cursor: default;
+}
+
 .home-content h1{
-    font-size: 56px;
+    font-size: 80px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 2;
     color: #ededed;
 
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: 700;
     color: #00abf0;
 }
 
 .home-content p {
-    font-size: 16px;
+    font-size: 22px;
     margin: 20px 0 40px;
     color: #ededed;
+    line-height: 28px;
 }
 
 .home-content .btn-box {
@@ -125,15 +149,47 @@ body {
    font-size: 19px;
 }
 
+.btn-box img {
+    height: 32px;
+}
+
+.btn-box a:hover {
+    color: white;
+    opacity: 0.8;
+    transition: 500ms;
+}
+
+
 .socials {
+    position: absolute;
+    bottom: 210px;
+    width: 130px;
     display: flex;
     justify-content: space-between;
-    max-width: 100px;
-    
+    margin-left: 10px;
+
 }
 
 .socials a {
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     color: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 2em;
+
+    
+}
+
+.socials a:hover {
+    color: #081b29;
+    background: #00abf0;
+    opacity: 0.8;
+    transition: 500ms;
 }
 
 table,th,tr,td{
@@ -142,10 +198,75 @@ table,th,tr,td{
     margin: 0 auto;
     border: 1px solid rgb(255, 255, 255);
     height: 30px;
-    color: #FFF;
+    color: #000;
+    text-align: center;
+    border: none;
+}
+
+tr:nth-child(even) {
+    background-color: #bebebe;
+}
+tr:nth-child(odd) {
+    background-color: #FFF;
+}
+
+h2 {
+    color: #FFFF;
     text-align: center;
 }
 
-td:nth-child(1) {
-    text-align: center;
+.shl-tabell {
+    height: 50vh;
+}
+
+.shl-text {
+    color: #FFF;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    width: 1196px;
+    margin-left: 352px;
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.FBK-logo img {
+    height: 230px;
+    width: 250px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.about {
+    width: 100%;
+    padding: 78px 0;
+}
+
+.about-main {
+    width: 1530px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.about-main img {
+    height: 400px;
+    margin-top: 50px;
+}
+
+.about-text h1 {
+    color: #00abf0;
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    width: 550px;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.img1:hover {
+    opacity: 0.7;
 }
