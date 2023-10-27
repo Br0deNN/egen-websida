@@ -1,50 +1,59 @@
-<!DOCTYPE html>
-<html lang="sv">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Egen hemsida</title>
+<!DOCTYPE html> <!--Sätter språket html-->
+<html lang="sv"> <!--Sätter språket svesnka på webben-->
+    <head> <!--Innehåller sidans metadata-->
+        <meta charset="UTF-8">  <!--Gör om dataspråk till människospråk-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gör så att alla enheter kan använda sidan-->
+        <title>Egen hemsida</title> <!--Ger namnet på sidan, syns på fliken-->
 
-        <link rel="stylesheet" href="home.css"> 
+        <link rel="stylesheet" href="home.css"> <!--Importerar css till hemsidan så att man kan ändra utseende på den-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Importerar ikoner-->
 
     </head>
-    <body id="index">
+    <body id="index"> <!--Bodyn på sidan är det vi ser i skillnad från head som inte syns-->
         
-        <div class="wrapper">
-            <header>
-                <a href="#" class="logo">Theo.</a>
+        <div class="wrapper"> <!--Omfamnar allt innehåll på sidan-->
+            <header> <!--Det som ska stå högst upp på sidan-->
+                <a href="#" class="logo">Theo.</a> <!--Gör en logo utan länk-->
 
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="index.html" class="active">Hem</a></li>
-                       <li><a href="sport.html">Sport</a></li> 
-                        <li><a href="aboutme.html">Om mig</a></li> 
+                <nav class="navbar"> <!--Gör en global meny-->
+                    <ul> <!--En punktlista över navbaren-->
+                        <li><a href="index.html" class="active">Hem</a></li> <!--Hemsidan--> <!--a är länk och li är lista-->
+                       <li><a href="sport.html">Sport</a></li> <!--Sport sidan-->
+                        <li><a href="aboutme.html">Om mig</a></li> <!--Om mig sidan-->
                     </ul>
                 </nav>
             </header>
-                <main>
-                    <section class="home">
-                        <div class="home-content">
-                            <h1>Välkommen</h1>
-                            <h3>Theo Brodén</h3>
+                <main> <!--Det som är i mitten av sidan-->
+                    <section class="home"> <!--Ett HTML5 element som delar upp main i delar, i detta fall bara en del eftersom jag bara har en section-->
+                        <div class="home-content"> <!--Delar upp informationen i en klass-->
+                            <h1>Välkommen</h1> <!--Sidans huvudrubrik-->
+                            <h3>Theo Brodén</h3> <!--Sidan tredje rubrik-->
                             <p>Hej och välkommen till min webbplats! Detta är min andra webbsida jag gör. Om du vill veta mer om vem jag är hittar du 
                                 det under <a class="x" href="#">om mig</a> uppe i högra hörnet <br> <br>
                                 Jag hoppas att du tycker om det jag gjort och skriv gärna till mig om du vill ge mig tips på hur jag kan förbättra mig.
-                            </p>
-                            <div class="btn-box">
+                            </p> <!--Text stycke-->
+                            <div class="btn-box"> <!--Gör en klass för knapparna-->
                                 <a href="https://www.yourvismawebsite.com/duff-uf/hem">Mitt UF</a>
-                                <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><img src="image/troll-face-logo-A3A07A678C-seeklogo.com.png" alt=""></a>
+                                <a href="https://www.youtube.com/watch?v=oHg5SJYRHA0"><img src="image/troll-face-logo-A3A07A678C-seeklogo.com.png" alt=""></a> <!--lägger till en bild på knappen-->
                             </div>
                         </div>
                     
-                        <div class="socials">
+                        <div class="socials"> <!--Delar in i en socialmedia klass-->
                             <a href="https://www.instagram.com/brodentheo/"><i class='bx bxl-instagram'></i></a> <!-- använder <i> och bx bxl för att kunna anävnda ikonen-->
                             <a href="https://github.com/Br0deNN"><i class='bx bxl-github'></i></a>
                         </div>
                     </section>
+                    <section>
+                        <ol class="Lista"> <!--Ordnad lista-->
+                            <h3>Lista</h3>
+                            <li>Detta är min egna hemsida</li>
+                            <li>Uppe på sidan hittar du min navbar</li>
+                            <li>Längst ner på sidan hittar du min sidofot</li>
+                            <li>Undersök gärna sidan:)</li>
+                        </ol>
+                    </section>
                 </main>
-                <footer>
+                <footer> <!--Sidofot-->
                     <p>Namn: Theo Brodén <br> Klass: TE22A</p>
                 </footer>
         </div>

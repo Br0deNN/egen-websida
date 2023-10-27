@@ -1,48 +1,43 @@
-@import url(https://www.dafont.com/webfont.font);
 
-
-
-.wrapper {
-    display: grid;
-    height: 100%;
-    width: 100%;
-    grid-template-rows: 100px auto 80px;
-    grid-template-areas: 
+.wrapper { /* Klasselektor wrapper*/
+    display: grid; /* Gör att innehållet i wrappern visas i grid format, eller runät */
+    height: 100%; /* Gör att höjden på sidan är 100% */
+    width: 100%; /* Gör att bredden på hemsidan blir 100% */
+    grid-template-rows: 100px auto 80px; /* Ställer in storlek och plats på gridarna/rutnätet */
+    grid-template-areas: /* specificerar vilka områden som ska visas i gridar */
     "header"
     "main"
     "footer" ;
 }
 
-header {
-    grid-area: header;
-    width: 97vh;
-    padding: 20px 10%;
-    display: flex;
-    justify-content: space-between;
+header { /* typsylektorn header */
+    grid-area: header; /* Specificerar vilken arean som är grid*/
+    padding: 20px 10%; /* Flyttar på header elementen 20px ner och 10% åt höger*/
+    display: flex; /* Gör så att föremålen på sidan inte blir fasta utan blir enklare att flytta*/
+    justify-content: space-between; /* Gör så att det blir ett mellanrum mellan de olika elementen i header */
 }
 
 nav {
     grid-area: nav;
-    margin-left: 1100px;
 }
 
-nav > ul {
+nav > ul { /* Gruppselektor */
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    list-style-type: none;
-    width: 290px;
+    grid-template-columns: 1fr 1fr 1fr; /* Specificerar hur många kolumner rutnätet ska vara horisontellt*/
+    list-style-type: none; /* Tar bort prickarna i listan */
+    width: 290px; /* Sätter bredden på navbaren  */
 }
 
 nav a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
+    font-size: 18px; /* Ändrar text storleken tikll 18px */
+    color: #ededed; /* Ändrar färgen på texten*/
+    text-decoration: none; /* Tar bort understräcken */
+    font-weight: 500; /* Ändrar text tjockleken */
+    margin-left: 35px; /* Flyttar menyn 35px åt höger*/
 }
 
-nav a:hover {
-    color: #00abf0;
+nav a:hover { /* Gör så att det händerr något när du har muspekaren över*/
+    color: #00abf0; /* Ändrar texten till blå when hover*/
 }
 
 main {
@@ -57,14 +52,14 @@ main {
 footer {
     grid-area: footer;
     color: white;
-    background: rgb(10, 5, 24);
-    padding-bottom: 106px;
-    margin: 0 -10px 0 -10px;
-    text-align: center;
+    background: rgb(10, 5, 24); /* Ändrar bakgrunden på footern */
+    padding-bottom: 106px; /* Fyller ut så att fotterna täcker hela vägen till botten */
+    margin: 0 -10px 0 -10px; /* Gör så att footern visas utanför wrappern, alltså hela vägen till sidorna */
+    text-align: center; /* Justerar texten till mitten */
 }
 
 footer p {
-    margin-top: 30px;
+    margin-top: 30px; /* Flyttar ner innehållet 30px */
 }
 
 .logo {
@@ -73,16 +68,16 @@ footer p {
     text-decoration: none;
     font-weight: 600;
     padding-top: 15px;
-    cursor: default;
+    cursor: default; /* Byter inte muspekare när du hovrar över logon eftersom att loggan är ett a element behövde jag lägga till denna */
 }
 
 body {
-    height: 97vh;
-    background: url(image/leon-contreras-YyBlrCUVFWQ-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    overflow-x: hidden;
+    height: 97vh; /* Ändrar höjden i body */
+    background: url(image/leon-contreras-YyBlrCUVFWQ-unsplash.jpg); /* Importerar en bild som bakgrund*/
+    background-size: cover; /* Gör så att bilden tecker hela sidan */
+    background-position: center; /* Gör så att bilden är centrerad */
+    background-attachment: fixed; /* Gör så att det bara visas en bild och inte flera små bilder */
+    overflow-x: hidden; /* tar bort scrollen på bredden */
 }
 
 .active {
@@ -96,7 +91,7 @@ body {
 }
 
 .home-content {
-    max-width: 700px;
+    max-width: 700px; /* Anger en max bredd på innehållet i klassen */
 }
 
 .x {
@@ -109,7 +104,7 @@ body {
 .home-content h1{
     font-size: 80px;
     font-weight: 700;
-    line-height: 2;
+    line-height: 2;  /* Ändrar mellanrummet mellan bokstäverna vertikalt */
     color: #ededed;
 
 }
@@ -135,17 +130,17 @@ body {
 }
 
 .btn-box a {
-   position: relative;
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
+   position: relative; /* Du kan flytta innehållet till ett önskt ställe medan det ursprungliga stället som utgångsläge */
+   display: inline-flex; /* Gör så att du kan flytta innehållet enklare */
+   justify-content: center; /* Centrerar innehållet */
+   align-items: center; /* centrerar föremålen */
    text-decoration: none;
    color: #081b29;
    background: #00abf0;
    width: 150px;
    height: 100%;
-   border: 2px solid #00abf0;
-   border-radius: 10px;
+   border: 2px solid #00abf0; /* Gör en border runt innehållet som är solid och har storleken två pixlar samt färgen blå */
+   border-radius: 10px; /* Rundar kanterna på bordern */
    font-size: 19px;
 }
 
@@ -155,8 +150,8 @@ body {
 
 .btn-box a:hover {
     color: white;
-    opacity: 0.8;
-    transition: 500ms;
+    opacity: 0.8; /* Ändrar genomskinligheten på förgen */
+    transition: 500ms; /* Gör så att det blir en med smooth effekt när du hovrar */
 }
 
 
@@ -193,8 +188,8 @@ body {
 
 table,th,tr,td{
     width: 1200px;
-    border-collapse: collapse;
-    margin: 0 auto;
+    border-collapse: collapse; /* Tar bort border strecken */
+    margin: 0 auto; /* Centrerar typselektorerna  */
     border: 1px solid rgb(255, 255, 255);
     height: 30px;
     color: #000;
@@ -202,15 +197,15 @@ table,th,tr,td{
     border: none;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* Specificerar att alla jämna rader dvs 2 , 4 osv ska vara i den färgen */
     background-color: #bebebe;
 }
-tr:nth-child(odd) {
+tr:nth-child(odd) { /* Samma sak om even fast de ojämna raderna som 1 och 3 byter färg*/
     background-color: #FFF;
 }
 
 
-h2 {
+h2 { 
     color: #FFFF;
     text-align: center;
 }
@@ -227,13 +222,13 @@ h2 {
     width: 1196px;
     margin: 0 auto;
     margin-top: 10px;
-    font-size: 1.2em;
+    font-size: 1.2em; /* Ändrar storleken på texten med em*/
 }
 
 
 .about {
     width: 100%;
-    padding: 78px 0;
+    padding: 78px 0; /* Flyttar innehållet */
 }
 
 .about-main {
@@ -272,4 +267,15 @@ td .lag-logo {
     height: 16px;
 }
 
+ol {
+    color: white;
+    border: #00abf0 solid 2px;
+    width: 300px;
+    line-height: 30px;
+    margin: 400px 100px;
+}
 
+
+ol h3 {
+    text-align: left;
+}
